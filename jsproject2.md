@@ -80,5 +80,23 @@ fibonacci(5);
 
 ## 5. Show a variable value in an HTML webpage using DOM?
 ```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  
+  <body>
+   
+    <script>
+     let name = "Nathan";
+      document.write(name); 
+      </script>
+    <P> value has shown!</P>
 
+  </body>
+</html>
 ```
