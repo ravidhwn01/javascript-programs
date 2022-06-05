@@ -1,0 +1,84 @@
+# Programs -
+## 1. Average of array nums in Javascript?
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function avg(){
+            let sum = 0;
+            let arry = [1,2,3];
+            for (let i = 0; i < arry.length; i++) {
+                sum+= arry[i];
+                
+            }
+            document.write(`the average is ${sum/arry.length}`);
+        }
+        avg();
+     </script>
+</body>
+</html>
+```
+
+## 2. Swap two numbers by reference?
+```
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Swap Two Numbers</h1>
+
+<script>
+var num1 = 10;
+var num2 = 20;
+var temp = 0;
+
+document.write("<br>Before Swap, num1 = " +num1+" num2 = "+num2);
+temp = num1;
+num1 = num2;
+num2 = temp;
+document.write("<br>After Swap, num1 = " +num1+" num2 = "+num2);
+</script>
+</body>
+</html>
+```
+
+## 3. Print the fibonacci sequence?
+```
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JS Swap Two Numbers</h1>
+
+<script>
+function fibonacci( N){
+    let t1 =0;
+    let t2 = 1;
+    let nextTerm ;
+    for(let i =0;i<N;++i){
+        document.write(` ${t1 }`);
+        nextTerm =t1+t2;
+        t1 = t2;
+        t2 = nextTerm;
+    }
+}
+fibonacci(5);
+</script>
+</body>
+</html>
+```
+
+## 4. Sort an array by both ascending and descending order?
+```
+
+```
+
+## 5. Show a variable value in an HTML webpage using DOM?
+```
+
+```
