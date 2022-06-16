@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>events in js</title>
+    <style>
+      .head1{
+        background-color: green;
+        margin: 2px;
+        padding: 3px;
+        text-align: center;
+      }
+      .btn:hover{
+        background-color: red;
+        border-radius: 6px;
+        border: 2px solid black;
+      }
+      #firstpara{
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+      #secondpara{
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+      #thirdpara{
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head1">
+      <button id="firstheading" class="btn">heading 1</button>
+    </div>
+    <p id="firstpara"></p>
+    <div class="head1">
+      <button id="secondheading" class="btn">heading 2</button>
+    </div>
+    <p id="secondpara"></p>
+    <div class="head1">
+      <button id="thirdheading" class="btn">heading 3</button>
+    </div>
+    <p id="thirdpara"></p>
+
+
+    
+    <script>
+      document
+        .getElementById("firstheading")
+        .addEventListener("click", changecontent1);
+      function changecontent1() {
+        document.getElementById("firstpara").innerHTML = "kalu oye mera kalu";
+      }
+      document
+        .getElementById("secondheading")
+        .addEventListener("click", changecontent2);
+      function changecontent2() {
+        document.getElementById("secondpara").innerHTML =
+          "lalu oye mera lalu";
+      }
+      document
+        .getElementById("thirdheading")
+        .addEventListener("click", changecontent3);
+      function changecontent3() {
+        document.getElementById("thirdpara").innerHTML = "ramu oye mera ramu";
+      }
+      
+  
+    </script>
+  </body>
+</html>
