@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async_await </title>
+</head>
+<body>
+    
+
+    <script>
+        console.log("this is  async await tutorial  let's get  started!")
+      async  function ravi(){
+          console.log("inside  ravi function")
+          const  response = await fetch('https://api.github.com/users');
+            console.log('before response');
+            const users = await response.json();
+            console.log('users resolved')
+            return users;
+        }
+        console.log("before running ravi")
+        let a  = ravi();
+        console.log("after running ravi")
+        console.log(a);
+        a.then(data => console.log(data))
+    console.log("last line of this js file")
+    </script>
+</body>
+</html>
