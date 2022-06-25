@@ -1,0 +1,25 @@
+ 1.  What do you understand about cookies?
+ ans: A cookie is generally a small data that is sent from a website and stored on the user’s machine by a web browser that
+ was used to access the website. Cookies are used to remember information for later use and also to record the browsing activity on a website.
+ 
+ 2.  How would you create a cookie?
+
+The simplest way of creating a cookie using JavaScript is as below:
+document.cookie = "key1 = value1; key2 = value2; expires = date";
+
+3.  How would you read a cookie?
+
+Reading a cookie using JavaScript is also very simple. We can use the document.cookie string that contains the cookies that we just created using that string.
+
+The document.cookie string keeps a list of name-value pairs separated by semicolons, where ‘name’ is the name of the cookie, and ‘value’ is its value. We can 
+also use the split() method to break the cookie value into keys and values.
+
+4.  How would you delete a cookie?
+To delete a cookie, we can just set an expiration date and time. Specifying the correct path of the cookie that we want to delete is a good practice since some
+browsers won’t allow the deletion of cookies unless there is a clear path that tells which cookie to delete from the user’s machine.
+
+function delete_cookie(name) {
+
+  document.cookie = name + "=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+
+}
