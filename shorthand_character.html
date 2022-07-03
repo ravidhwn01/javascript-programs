@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shorthand character classes(regular expressions)</title>
+  </head>
+  <body>
+    <script>
+      let regex = /\w rry/;
+      regex = /\w+1r5/;
+      regex = /\W+1r5/;   // non word character
+      regex = /\d999/;   // \d means digit
+      regex = /\d+999/;   // \d+ means more than one digit
+      regex = /\D999/;   //  \D means non digit
+      regex = /\D+999/;   // \D+ means more than one non digit
+      regex = /\ska number/;   // \s  whitespace character
+      regex = /\Ska number/;   // \s  non whitespace character
+      regex = /\s+ka number/;   // \s one or more than one whitespace character
+      regex = /1r5r\b/;   //  word boundary 
+      str = "harhar1r5r 8r bhai ka number 89999999";
+      
+      let result = regex.exec(str);
+      console.log("the result from exec is :", result);
+      if (regex.test(str)) {
+        console.log(
+          `the string ${str} matches the expression ${regex.source}  `
+        );
+      } else {
+        console.log(
+          `the string ${str} does not matches the expression ${regex.source}  `
+        );
+      }
+    </script>
+  </body>
+</html>

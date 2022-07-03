@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>regular expression</title>
+  </head>
+  <body>
+    <button style="align-items: center; margin: 2px 725px">thoko....</button>
+
+    <script>
+      console.log("this is  regular expression");
+      let regex = /h[a-z]rry/;   // character set : []
+    regex = /h[^aty]rry[ui0-9]/;   // we can have as many character sets as we want
+
+
+    // quantifiers  we use - {}
+    regex = /har{2}y /;    // r can be exact 2 times
+    regex = /har{0,2}y /;   // r can be 0 ,  1 and  2 times
+
+    // groupings - we can paranthesis for groupings we use- ()
+    regex = /(har){2}([0-9]r){3} /;
+      let str = "harry bhai";
+      str = "harhar1r5r8r bhai";
+      let result = regex.exec(str);
+      console.log("the result from exec is :", result);
+      if (regex.test(str)) {
+        console.log(
+          `the string ${str} matches the expression ${regex.source}  `
+        );
+      } else {
+        console.log(
+          `the string ${str} does not matches the expression ${regex.source}  `
+        );
+      }
+    </script>
+  </body>
+</html>
